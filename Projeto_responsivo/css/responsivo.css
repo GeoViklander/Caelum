@@ -1,0 +1,110 @@
+body {
+    font: 100%/1.5 arial, verdana,tahoma;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, footer {
+  /* min-height: 150px; */
+  background-color:darkkhaki;  
+}
+
+main {
+    min-height: 800px;
+    background-color: cornflowerblue;
+}
+
+/*
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 2.5;
+}
+
+header li {
+    border: 1px solid;
+    float: left;
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    background-color: darkorchid;
+
+}
+
+header li a {
+    color: aquamarine;
+    text-decoration: none;
+    display: block;
+}
+*/
+
+/* MOBILE FIRST */
+header h1 {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2;
+    color: brown;
+    text-decoration: none;
+}
+header li {
+    border-bottom: 1px solid;
+    line-height: 2;
+    text-align: center;
+    background-color: yellowgreen;
+
+}
+header li:first-child 
+{
+    border-top: 2px solid;
+}
+
+header a {
+    color: inherit;
+    text-decoration: inherit;
+    display: inherit;
+    
+}
+main p {
+    padding: 0.5em 0.5em 0;
+}
+
+main img{
+    width: 100%;
+}
+
+/* CSS MEDIA TYPES 
+handheld, print, screen*/
+
+@media print {
+    header nav{
+        display:none ;
+    }
+}
+
+/* Css Media Queries */
+@media screen and (min-width: 768px) and (orientation: landscape){
+
+    header li {
+        float: left;
+        border-top: 2px solid;
+        width: 16.66%;
+    }
+
+ @media screen and (min-width:1024px) {
+     header h1 {
+         text-align: left;
+         padding-left: 0.5em;
+         font-size: 2em;
+     }
+        
+    }
+
+}
+
+
+
+
