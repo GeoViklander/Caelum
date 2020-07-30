@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Overview do HTML 5</title>
+        <link rel="stylesheet" href="overview.css">
+    </head>
+
+    <body>
+        <h1 id="titulo-da-pagina">Overview do HTML 5</h1>
+        <h2 id="subtitulo" class="fundo-verde">Textos</h2>
+        <p>Lorem ipsum <b> dolor </b> sit amet <small>pequeno</small> adipisicing elit. 
+        Eveniet voluptatibus, assumenda <cite>modi</cite>  commodi <del> architecto </del> hic aliquid ex debitis 
+        non repellat veritatis <strong>repellat</strong> deserunt alias sunt. Minus suscipit iusto 
+        non perferendis?</p>
+
+        <p class="caixa">Lorem ipsum dolor sit amet <ins> Sint </ins>consectetur adipisicing elit. Sint, neque natus? 
+        Commodi velit <i>elit</i> vitae officiis quas,<mark>quae ut placeat asperiores,</mark>
+        hic itaque <em>vitae</em> consequatur <big> grande </big> obcaecati optio facere ea <u>voluptatem</u> atque!
+        Prof <sup>o</sup>
+        H<sub>2</sub> <sub>0</sub> 
+            <!--CITE = USAR EM CITAÇÕES
+            EM = USAR EM ENFASE
+            SUB = DESCE A LETRA
+            SUP = SOBE A LETRA
+            DEL = PARTE DO TEXTO Q FOI EXCLUIDO
+            INS = PARTE DO TEXTO QUE FOI ATUALIZADA REFERENTE AO DEL QUE EXCLUI-->
+    </p>
+
+
+
+
+        <h2>Listas</h2>
+        <h3>Ordenadas</h3>
+        <p>Relação dos 5 veículos mais vendidos em 2019:</p>
+        <ol>
+            <li>HB20</li>
+            <li>Celta</li>
+            <li>Corsa</li>
+            <li>Gol</li>
+            <li>Novo Fusca</li>
+
+        </ol>
+        <h3 id="alvo">Não - Ordenadas</h3>
+        <p>Tecnlogia emergentes em 2020:</p>
+        <ul>
+            <li>Kotlin</li>
+            <li>Node</li>
+            <li>Go</li>
+            <li>Python</li>
+        </ul>
+
+        <h3>Definição</h3>
+        <p>Partidos Políticos</p>
+        <dl>PT</dl>
+        <dd>Partidodos trabalhadores é um gruo..</dd>
+
+
+        <h2>Tabelas</h2>
+        <table border="1" id="tudo-centralizado" 
+        class="texto-amarelo">
+            <thead> <!---CABEÇALHO-->
+        <tr>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Preço</th>
+            <!----TH DEIXA EM NEGRITO E CENTRALIZADO-->
+    
+        </tr>
+          </thead>
+            <!---CORPO-->
+          <tbody>
+        <tr>
+            <td>HB20</td>
+            <td>BRANCO</td>
+            <td>2017</td>
+            <td>57.000,00</td> 
+        </tr>
+
+        <tr>
+            <td>Corsa</td>
+            <td>Azul</td>
+            <td>2018</td>
+            <td rowspan="2">25.000,00</td> 
+        </tr>
+
+        <tr>
+            <td>Palio</td>
+            <td>Amarelo</td>
+            <td>2017</td>
+            <!-- <td>25.000,00</td> -->
+        </tr>
+        </tbody>
+        <!---RODAPÉ-->
+        <tfoot> 
+            <tr>
+                <td colspan="4">Preços válidos enquanto durarem nosso estoque</td>
+                
+            </tr>
+        </tfoot>
+
+        </table>
+
+        <h2>Imagens</h2>
+        <img src="imageS/400.jpeg" alt="cachorro">
+     
+        <br>
+
+        <img src="images/lula.jpeg" alt="lula ladrão">
+        
+        <br>
+
+        <img src="http://lorempixel.com.br/250/250" alt="">
+        
+        <br>
+
+        <h2>Hyperlinks</h2>
+        <p> <a href="https://loremipsum.io/"
+            target="_blank"> Non nisi est sit amet facilisis magna etiam.</a>
+        Lorem dolor sed viverra ipsum nunc aliquet. 
+        Urna molestie at elementum eu facilisis sed odio morbi quis. Laoreet sit amet cursus sit. 
+        Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Vulputate mi sit amet mauris 
+        commodo quis imperdiet massa. Nulla aliquet porttitor lacus luctus. Quam id leo in vitae. 
+        Justo eget magna fermentum iaculis. Habitasse platea dictumst quisque sagittis purus sit. 
+        Tristique senectus et netus et malesuada fames ac. 
+        Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.</p>
+
+        <p>Link relativo: <a href="intro.html">Introdução</a></p>
+
+        <p>Link Email: <a href="mailto:sac@caelum.com.br?
+            subject=Fale Conosco&body=Escreva sua mensagem aqui=">
+            sac@caelum.com.br</a></p>
+            
+        <p>Link cego: <a href="#">Ir para o topo</a></p>
+
+        <p>Link ancora: <a href="#alvo">Ir para Listas Não Ordenadas</a></p>
+
+        <h2>Formulários</h2>
+            <form action="intro.html" method="POST"> <!--action é o aonde eu vou alocar as info-->
+                <fieldset>
+                <label for="">E-mail</label><br>
+                <input type="email" name="email" id="">
+
+                <br> <br>
+
+                <label for="">Senha</label><br>
+                <input type="password" name="senha" id="">
+
+                <br> <br>
+                
+                <button>Enviar</button>
+
+                </fieldset>
+
+
+
+
+            </form>
+        <h2>Iframes</h2>
+        <br> <br>
+        <iframe src="https://www.uol.com.br" frameborder="1"
+        width="98%" height="80"></iframe>
+        <br> <br>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EmzkM26Z9RI" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <br> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14641.238650790023!2d-46.4743515!3d-23.4492921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x556a88d4f917edce!2sPrados%20Lounge%20e%20Beer!5e0!3m2!1spt-BR!2sbr!4v1595376330496!5m2!1spt-BR!2sbr"
+         width="600" height="450" frameborder="0" style="border:0;" 
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </body>
+
+
+
+</html>
+

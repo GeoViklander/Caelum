@@ -1,0 +1,13 @@
+/*
+css - Cascading Style Sheets (Folha de Estilos em Cascata)
+
+seletor { propriedade: valor;}
+*/
+
+h1 {color:red;}
+
+p { background-color: cornflowerblue;
+    color: yellow;
+}
+
+body {background-color: silver;}

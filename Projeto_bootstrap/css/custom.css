@@ -1,0 +1,31 @@
+body {
+    background-color: lightcyan;
+  }
+  
+  /* div, section {
+    border: 1px solid red;
+  } */
+  
+  /* section {
+    min-height: 600px;
+  } */
+  
+  header, main, footer {
+    /* border: 1px solid blue; */
+  }
+  
+  header .navbar {
+    background-color: mediumslateblue;
+  }
+  
+  .navbar-light .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: yellow;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: greenyellow;
+  }
