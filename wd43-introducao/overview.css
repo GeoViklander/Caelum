@@ -1,0 +1,85 @@
+/* 
+Tipos de Seletroes do CSS
+*/
+
+/*
+Seletor de Tag
+*/
+
+del {
+    background-color: red;
+
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+big {
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color: red;
+}
+
+#titulo-da-pagina
+{
+    color: cyan;
+    background-color: purple;
+    text-align: center;
+}
+
+#subtitulo
+{
+    border-top: 5px solid red;
+    border-bottom: red 5px solid;
+}
+
+/*
+Seletor de classe
+*/
+
+.caixa{
+    border: 4px double blueviolet;
+}
+
+.fundo-amarelo
+{
+    background-color: yellow;
+}
+
+.fundo-verde{
+    background-color: green;
+}
+
+/*
+Especificidades
+*/
+
+table {
+    background-color: hotpink;
+}
+#texto-amarelo {
+color: lawngreen;
+}
+
+#tudo-centralizado {
+    text-align: center;
+    color: cyan;
+}
+
+table#tudo-centralizado {
+    background-color: darkgreen;
+    color: yellow;
+}
+
+.text-amarelo#tudo-centralizado {
+    background-color: darkmagenta;
+    color: darkorange;
+}
+
