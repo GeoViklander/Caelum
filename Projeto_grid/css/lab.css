@@ -1,0 +1,38 @@
+body {
+    font: 100%/1.5 arial, verdana, tahoma;
+}
+
+.container {
+    border: 4px solid blueviolet;
+    display: grid;
+  grid-template-columns:repeat(6, 1fr) ;
+  grid-auto-rows: 150px;
+  grid-gap: 1em;
+ }
+
+
+.container div:nth-child(3) {
+background-color: yellowgreen;
+/* align-self: stretch;
+justify-self: center; */
+grid-column-start: 2;
+grid-column-end: 6;
+}
+
+.container div:nth-child(1),
+.container div:nth-child(5) {
+    /* grid-column-start: 1;
+    grid-column-end: 7; */
+    grid-column: 1/-1;
+}
+
+.container div {
+    background-color: skyblue;
+}
+
+.container div:nth-child(even) {
+    background-color: steelblue;
+}
+
+/* even - par / odd - impar */
+

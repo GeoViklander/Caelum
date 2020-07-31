@@ -1,0 +1,60 @@
+body {
+    font: 100%/1.5 arial, verdana, tahoma;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:minmax(50px, auto) minmax(600px, auto) minmax(150px, auto);
+    grid-gap: 1em;
+    grid-template-areas: 
+    "cabecalho  cabecalho  cabecalho  cabecalho"
+    "principal  principal  principal  lateral"
+    "rodape     rodape     rodape    rodape";
+
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav  a{
+   /* border: 1px solid red; */
+   flex-grow: 1;
+   text-align: center;
+   background-color: black;
+   color: white;
+   text-decoration: none;
+   line-height: 2;
+}
+
+main {
+    grid-area: principal;
+}
+
+aside {
+    grid-area: lateral;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+.container > * {
+    background-color: yellowgreen;
+}
+
+.container > *:nth-child(even) {
+    background-color: steelblue;
+}
